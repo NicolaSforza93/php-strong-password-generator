@@ -1,9 +1,5 @@
 <?php
 
-$length = $_GET['length_string'];
-$characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@!?&.:;+_-%';
-
-
 function passwordGenerator($arg1)
 {
     $characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@!?&.:;+_-%';
@@ -16,5 +12,3 @@ function passwordGenerator($arg1)
     }
     return $Password;
 }
-
-// var_dump(passwordGenerator($length));

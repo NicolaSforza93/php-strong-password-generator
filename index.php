@@ -13,6 +13,8 @@
 
     require __DIR__ . '/functions.php';
 
+    $length = $_GET['length_string'];
+
     ?>
     <div class="container p-4">
         <form action="" method="GET" class="d-flex align-items-center gap-3 mb-3">
