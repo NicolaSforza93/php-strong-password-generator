@@ -1,9 +1,8 @@
 <?php
 
-function passwordGenerator($arg1)
+function passwordGenerator($length)
 {
     $characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@!?&.:;+_-%';
-    $length = $_GET['length_string'];
     $Password = '';
     // var_dump($characters, $length);
     for ($i = 0; $i < $length; $i++) {

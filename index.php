@@ -11,7 +11,7 @@
 <body>
     <?php
 
-    require __DIR__ . '/functions.php';
+    require __DIR__ . '/partials/functions.php';
 
     $length = $_GET['length_string'];
 
