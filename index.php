@@ -13,14 +13,15 @@
 
     require __DIR__ . '/partials/functions.php';
 
-    $length = $_GET['length_string'];
+    $length = $_GET['length_string'] ?? false;
+    $length = intval($length);
 
     ?>
     <div class="container p-4">
         <form action="" method="GET" class="d-flex align-items-center gap-3 mb-3">
             <div class="d-flex align-items-center gap-2">
                 <label for="length_string"><strong>Inserisci un numero</strong></label>
-                <input type="number" name="length_string" id="length_string">
+                <input required type="number" name="length_string" id="length_string" value="<?php echo $length; ?>">
             </div>
             <button type="submit" class="btn btn-primary btn-sm">Genera</button>
         </form>
